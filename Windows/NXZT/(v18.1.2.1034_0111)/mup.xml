@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MUPDefinition xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd mupdefinition.xsd">
+  <packageinformation>
+    <name>RST</name>
+    <installertype>vendorinstaller</installertype>
+    <packagegrouping>dch_package</packagegrouping>
+    <packagingtype>dch_inf_package</packagingtype>
+    <releasetype>DRVR</releasetype>
+    <subsystem>Storage Controller</subsystem>
+    <AppliesTo>
+      <DeviceInformation>Intel® Rapid Storage Technology</DeviceInformation>
+    </AppliesTo>
+    <mupspecificationversion>3.0.0</mupspecificationversion>
+    <version>18.1.2.1034</version>
+    <supportedoperatingsystems>
+      <osidentifier name="Windows10" architecture="x64" />
+    </supportedoperatingsystems>
+    <content dchSupport="true" baseOSBuildNumber="15063">
+      <DeviceGroup supportedOSBuildNumber="15063">
+        <Device componentID="100638">
+          <PCIInfo vendorID="8086" deviceID="A282" />
+          <PCIInfo vendorID="8086" deviceID="34D3" />
+          <PCIInfo vendorID="8086" deviceID="02D3" />
+          <PCIInfo vendorID="8086" deviceID="06D2" />
+          <PCIInfo vendorID="8086" deviceID="06D3" />
+          <PCIInfo vendorID="8086" deviceID="A382" />
+          <PCIInfo vendorID="8086" deviceID="43D2" />
+          <Image type="DRVR" inftype="base" version="18.31.2.1034">
+            <file>15063\Drivers\AHCI\iaAHCIC.inf</file>
+            <supportedoperatingsystems>
+              <osidentifier name="Windows10.0" architecture="x64" buildNumber="15063" />
+            </supportedoperatingsystems>
+          </Image>
+        </Device>
+        <Device componentID="100638">
+          <PCIInfo vendorID="8086" deviceID="2822" />
+          <PCIInfo vendorID="8086" deviceID="282A" />
+          <PCIInfo vendorID="8086" deviceID="A286" />
+          <PCIInfo vendorID="8086" deviceID="34D7" />
+          <PCIInfo vendorID="8086" deviceID="02D7" />
+          <PCIInfo vendorID="8086" deviceID="06D6" />
+          <PCIInfo vendorID="8086" deviceID="06D7" />
+          <PCIInfo vendorID="8086" deviceID="A386" />
+          <PCIInfo vendorID="8086" deviceID="43D6" />
+          <PCIInfo vendorID="8086" deviceID="43DE" />
+          <Image type="DRVR" inftype="base" version="18.31.2.1034">
+            <file>15063\Drivers\RAID\iaStorAC.inf</file>
+            <supportedoperatingsystems>
+              <osidentifier name="Windows10.0" architecture="x64" buildNumber="15063" />
+            </supportedoperatingsystems>
+          </Image>
+        </Device>
+        <Device componentID="100638">
+          <PCIInfo vendorID="8086" deviceID="9A0B" />
+          <PCIInfo vendorID="8086" deviceID="09AB" />
+          <Image type="DRVR" inftype="base" version="18.1.2.1034">
+            <file>15063\Drivers\VMD\iaStorVD.inf</file>
+            <supportedoperatingsystems>
+              <osidentifier name="Windows10.0" architecture="x64" buildNumber="15063" />
+            </supportedoperatingsystems>
+          </Image>
+        </Device>
+        <Device componentID="100638">
+          <Generic>SWC\VID8086&amp;SW_RstShellExtensions</Generic>
+          <Generic>SWC\VID8086&amp;PID2822&amp;SID0001</Generic>
+          <Image type="DRVR" inftype="component" version="18.1.2.1034">
+            <file>15063\Drivers\PinningComponent\iaStorPinningComponent.inf</file>
+            <supportedoperatingsystems>
+              <osidentifier name="Windows10.0" architecture="x64" buildNumber="15063" />
+            </supportedoperatingsystems>
+          </Image>
+        </Device>
+        <Device componentID="100638">
+          <Generic>SWC\VID8086&amp;SW_RstHSA</Generic>
+          <Image type="DRVR" inftype="component" version="18.1.2.1034">
+            <file>15063\Drivers\HsaComponent\iaStorHsaComponent.inf</file>
+            <supportedoperatingsystems>
+              <osidentifier name="Windows10.0" architecture="x64" buildNumber="15063" />
+            </supportedoperatingsystems>
+          </Image>
+        </Device>
+        <Device componentID="100638">
+          <PCIInfo vendorID="8086" deviceID="2822" />
+          <PCIInfo vendorID="8086" deviceID="282A" />
+          <PCIInfo vendorID="8086" deviceID="A286" />
+          <PCIInfo vendorID="8086" deviceID="34D7" />
+          <PCIInfo vendorID="8086" deviceID="02D7" />
+          <PCIInfo vendorID="8086" deviceID="06D6" />
+          <PCIInfo vendorID="8086" deviceID="06D7" />
+          <PCIInfo vendorID="8086" deviceID="A386" />
+          <PCIInfo vendorID="8086" deviceID="43D6" />
+          <PCIInfo vendorID="8086" deviceID="43DE" />
+          <PCIInfo vendorID="8086" deviceID="A282" />
+          <PCIInfo vendorID="8086" deviceID="34D3" />
+          <PCIInfo vendorID="8086" deviceID="02D3" />
+          <PCIInfo vendorID="8086" deviceID="06D2" />
+          <PCIInfo vendorID="8086" deviceID="06D3" />
+          <PCIInfo vendorID="8086" deviceID="A382" />
+          <PCIInfo vendorID="8086" deviceID="43D2" />
+          <PCIInfo vendorID="8086" deviceID="9A0B" />
+          <Image type="DRVR" inftype="extension" version="18.1.2.1034" Id="{8541b81c-193b-4f91-a86b-53df20c1974b}">
+            <file>15063\Drivers\HsaExtension\iaStorHsa_Ext.inf</file>
+            <supportedoperatingsystems>
+              <osidentifier name="Windows10.0" architecture="x64" buildNumber="15063" />
+            </supportedoperatingsystems>
+          </Image>
+        </Device>
+      </DeviceGroup>
+    </content>
+  </packageinformation>
+  <executable architecture="x64" timeout="300">
+    <executablename>SetupRST.exe</executablename>
+  </executable>
+  <behaviors>
+    <behavior name="extractdrivers">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="true" valuedelimiter=" " enclose="&quot;">extractdrivers</optionvalue>
+      </vendoroption>
+    </behavior>
+    <behavior name="attended" />
+    <behavior name="freshinstall" />
+    <behavior name="unattended">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">s</optionvalue>
+      </vendoroption>
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">accepteula</optionvalue>
+      </vendoroption>
+    </behavior>
+  </behaviors>
+  <parameters>
+    <parametermapping name="logfile">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="true" valuedelimiter=" " enclose="&quot;">reportfile</optionvalue>
+      </vendoroption>
+    </parametermapping>
+  </parameters>
+  <returncodes>
+    <returncodemapping name="SUCCESS">
+      <vendorreturncode>0</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>1603</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOTING_SYSTEM">
+      <vendorreturncode>1641</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_REQUIRED">
+      <vendorreturncode>3010</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR_INSTALL_PLATFORM_UNSUPPORTED">
+      <vendorreturncode>1633</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="UNKNOWN_OPTION">
+      <vendorreturncode>1639</vendorreturncode>
+    </returncodemapping>
+  </returncodes>
+</MUPDefinition>
